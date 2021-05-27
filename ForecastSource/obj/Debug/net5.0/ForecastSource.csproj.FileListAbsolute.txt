@@ -1,0 +1,12 @@
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\bin\Debug\net5.0\ForecastSource.deps.json
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\bin\Debug\net5.0\ForecastSource.dll
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\bin\Debug\net5.0\ref\ForecastSource.dll
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\bin\Debug\net5.0\ForecastSource.pdb
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\obj\Debug\net5.0\ForecastSource.csprojAssemblyReference.cache
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\obj\Debug\net5.0\ForecastSource.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\obj\Debug\net5.0\ForecastSource.AssemblyInfoInputs.cache
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\obj\Debug\net5.0\ForecastSource.AssemblyInfo.cs
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\obj\Debug\net5.0\ForecastSource.csproj.CoreCompileInputs.cache
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\obj\Debug\net5.0\ForecastSource.dll
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\obj\Debug\net5.0\ref\ForecastSource.dll
+D:\Programming\repos\WeatherForecasterWpf\ForecastSource\obj\Debug\net5.0\ForecastSource.pdb

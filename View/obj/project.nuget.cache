@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rANt+EnXBktLeSh/SjdlRfHFMz9PHOq1fwt0af2TNCKlrGuIDwu+cNvW1tqwifZrrdv668ZZspnviG+iXJTJWA==",
+  "success": true,
+  "projectFilePath": "D:\\Programming\\repos\\WeatherForecasterWpf\\View\\View.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\David\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
+  ],
+  "logs": []
+}

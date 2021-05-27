@@ -1,0 +1,52 @@
+﻿<Window x:Class="View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        xmlns:converters="clr-namespace:View.Converters"
+        Title="Weather Forecaster WPF" Height="450" Width="400">
+    <Window.Resources>
+        <converters:TemperatureUnitValueConverter x:Key="TemperatureUnitValueConverter"/>
+        <converters:DateTimeValueConverter x:Key="DateTimeValueConverter"/>
+    </Window.Resources>
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <Border DockPanel.Dock="Top" BorderBrush="Black" BorderThickness="1">
+                <StackPanel>
+                    <Button Content="Hämta Prognos" Click="Button_Click"/>
+                    <TextBlock Text="{Binding CurrentCity}" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+            <ScrollViewer VerticalAlignment="Stretch">
+                <ListView ItemsSource="{Binding Forecast}">
+                    <ListView.Template>
+                        <ControlTemplate>
+                            <!-- Empty ListView template allows ScrollViewer to scroll with mouse -->
+                            <ItemsPresenter />
+                        </ControlTemplate>
+                    </ListView.Template>
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{Binding Path=Icon.ContentData}"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="{Binding Path=From, Converter={StaticResource DateTimeValueConverter}}"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding Path=Temperature.Value}"/>
+                                        <TextBlock Text="{Binding Path=Temperature.Unit, Converter={StaticResource TemperatureUnitValueConverter}}"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollViewer>
+        </DockPanel>
+    </Grid>
+</Window>
