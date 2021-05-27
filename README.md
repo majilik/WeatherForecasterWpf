@@ -5,4 +5,5 @@ Entry point for the code is in the View project, see MainWindow.xaml.cs
 
 ## System Requirements
 OS: Windows 8/10
+
 Internet connection is required
